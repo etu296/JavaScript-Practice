@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3 style="text-align: center;">Js can change hltm element.</h3>
+        <p style="text-align: center;" id="etu"> Need to learn JS</p>
+        <div >
+            <center>
+                <button type="button" onclick='document.getElementById("etu").innerHTML = "Practice first!"'>Click</button>
+            </center>
+        </div>
+        <h2 style="text-align: center;">Js can change hltm attributes values</h2>
+        <div >
+            <center>
+                <button  onclick="document.getElementById('image').src='image/hpy.jpg'">Smile please</button>
+                <img id="image" src="image/sad.png"  style="width: 100px;">
+                <button onclick="document.getElementById('image').src='image/sad.png'">Now be sad!</button>
+            </center>
+        </div>
+        
+        <div style="margin-top: 10px;">
+            <center>
+                <button onclick="document.getElementById('image').src='image/flower.png'">Give flower</button>
+                <button onclick="document.getElementById('image').src='image/wow.jpg'">be amazed</button>
+                <button id="btn" onclick="document.getElementById('image').src='image/veryhappy.png'">be very happy</button>
+            </center>
+        </div>
+        <h4 style="text-align: center;">Js can change html style & hide elements</h4>
+        <p  style="text-align: center;" id="text">Change  text font size</p>
+        <div>
+            <center>
+                <button type="button" onclick="document.getElementById('text').style.fontSize= '40px'">change font</button>
+                <button type="button" onclick="document.getElementById('btn').style.display = 'none'">Hide btn</button>
+                <button type="button" onclick="document.getElementById('btn').style.display = 'block'">Unhide btn</button>
+            </center>
+        </div>
+    </body>
+</html>

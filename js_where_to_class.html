@@ -12,13 +12,21 @@
         <h3> JS Where to w3 schooly</h3>
         <p id="text1">Function can be written in head tag</p>
         <p id="text2">Function can be written in bodytag</p>
+        <p id="etu">Function can be written in other js file</p>
+        <p id="demo">This example uses a full web URL to link to "myScript.js".(myFunction is stored in "myScript.js")</p>
+
         <button type="button" onclick="myFunction1()">try for head</button>
         <button type="button" onclick="myFunction2()">try for body</button>
+        <button type="button" onclick="newFunction()">try for js file</button>
+        <button type="button" onclick="myFunction()">try for url link to js file</button>
 
         <script>
             function myFunction2()
             {
              document.getElementById('text2').innerHTML='Hello JS';
             }
-        </script>  
+        </script> 
+        <script src="js_where_to.js"></script> 
+        <script src="https://www.w3schools.com/js/myScript.js"></script> 
+
 </html>

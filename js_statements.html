@@ -5,12 +5,34 @@
     <body>
         <h3> JS statements</h3>
         <p id="text">hello calculate here</p>
+        <p id="newtext">hello calculate here</p>
         <script>
-            let x, y, z;
+            let x, y, z, a ="etu";
             x = 2; y = 3; z = x * y;
             document.getElementById('text').innerHTML = "The value of  z is " + z +" .";
+            document.getElementById('newtext').innerHTML = "The value of  a is " + a +" .";
+            function myFunction()
+            {
+            document.getElementById('text1').innerHTML = 'Hello JS';
+            document.getElementById('text2').innerHTML = 'How are you?';
+            document.getElementById('text3').innerHTML = 'Are you ok?';
+            }
         </script> 
-      
-     
+      <hr>
+     <button type="button" onclick="myFunction()">Click me</button>
+     <p id="text1"></p>
+     <p id="text2"></p>
+     <p id="text3"></p>
+     <p>Here is a list of some of the keywords you will learn about in this tutorial: <br>
 
+       <u>Keyword	 -    Description</u><br>
+        var	    -     Declares a variable<br>
+        let	    -      Declares a block variable<br>
+        const	-      Declares a block constant<br>
+        if	    -      Marks a block of statements to be executed on a condition<br>
+        switch  -      Marks a block of statements to be executed in different cases<br>
+        for     -  	 Marks a block of statements to be executed in a loop<br>
+        function- 	 Declares a function<br>
+        return	 -     Exits a function<br>
+        try    	-      Implements error handling to a block of statements</p>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p>JavaScript Variables can be declared in 4 ways: <br>
+
+    1. Automatically - undeclared <br>
+    2. Using var <br>
+    3. Using let <br>
+    4. Using const</p>
+    <p> ** JavaScript identifiers are case-sensitive. <br>
+        All JavaScript variables must be identified with unique names.
+
+          These unique names are called identifiers. <br>
+          
+        The "equal to" operator is written like == in JavaScript. <br>
+       You cannot re-declare a variable declared with let or const.
+       in var its possible.
+
+    </p>
+
+<p id="demo">Automatically - undeclared</p>
+<p id="demo1">Using var</p>
+<p id="demo2">Using let</p>
+<p id="demo3">Using const</p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<script>
+/* JavaScript Variables can be declared in 4 ways:
+
+Automatically - undeclared*/
+x = 2;
+y = 3;
+z = x + y ;
+document.getElementById('demo').innerHTML = "the value of z = "+ z +"";
+//Using var
+ var x = 2;
+var y = 3;
+var z = x * y ;
+document.getElementById('demo1').innerHTML = "the value of z = "+ z ;
+//Using let it can be changed
+let a = 12;
+let b = 3;
+let c = a - b ;
+document.getElementById('demo2').innerHTML = "the value of C =  "+ c ;
+//Using const cannot be changed
+const d = 2;
+const e = 3;
+const f = e / d ;
+document.getElementById('demo3').innerHTML = "the value of F "+ f ;
+
+// mixed exampe 
+const price1 = 100;
+const price2 = 200;
+const item = 'Egg';
+let total = price1 + price2;
+document.getElementById('demo4').innerHTML = "the total price of the item is " + total + item;
+//undefine 
+let watchName;
+document.getElementById('demo5').innerHTML = watchName;
+</script>
+
+</body>
+</html>
+
+

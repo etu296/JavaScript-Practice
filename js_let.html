@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+    </head>
+    <body>
+        <h3> JS let</h3>
+        <img id="image" src="image/js.png" style="width: 800px;">
+        <p id="etu">Redeclaring a variable with let, in another block, IS allowed:</p>
+        <script>
+            let x = 3;
+            {
+                let x = 5;
+            }
+            {
+                let x = 6;
+            }
+            document.getElementById('etu').innerHTML = x;
+        </script>
+     
+    </body>
+</html>

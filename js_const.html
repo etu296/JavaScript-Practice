@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+</head>
+<body>
+    <h2>JS CONSTANT</h2>
+        <p>Variables defined with const cannot be Redeclared <br>
+
+        Variables defined with const cannot be Reassigned <br>
+        
+        Variables defined with const have Block Scope <br>
+        But we can <br>
+        Change the elements of constant array <br>
+        Change the properties of constant object
+        </p>
+    <p id="etu"> show Demo </p>
+    <h3>Constant Arrays</h3>
+    <p id="etu1"></p>
+    <h3>Constant Objects</h3>
+    <p id="etu2"></p>
+</body>
+<script> 
+const PI = 3.1416; // only use const when the value we assigned is fixed like a new Array, Object, Function & RegExp
+// PI = 3.32; // redeclare not possible
+// PI = PI + 2; // reassigne not possible 
+document.getElementById('etu').innerHTML = PI;
+// array
+const flower = ['Rose' , 'Dalia' , 'Beli']; // can create a const array
+flower[1] = 'Tulip'; // we can chnage the element of an array
+flower.push('Bagan Bilash'); // we can add an element
+document.getElementById('etu1').innerHTML = flower;
+// object
+
+
+</script>
+</html>

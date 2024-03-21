@@ -19,6 +19,8 @@
     <p id="etu1"></p>
     <h3>Constant Objects</h3>
     <p id="etu2"></p>
+    <h3>Constant Block Scope</h3>
+    <p id="etu3"></p>
 </body>
 <script> 
 const PI = 3.1416; // only use const when the value we assigned is fixed like a new Array, Object, Function & RegExp
@@ -31,7 +33,20 @@ flower[1] = 'Tulip'; // we can chnage the element of an array
 flower.push('Bagan Bilash'); // we can add an element
 document.getElementById('etu1').innerHTML = flower;
 // object
+const car = { type:'Fait', model:'BMW', color:'Red'}
+car.model = 'Toyota'; // change property
+car.owner = 'Era'; // add property
+document.getElementById('etu2').innerHTML = car.type + " " + car.model + " " + car.color + " " + car.owner;
 
+const x = 'etu';
+{
+    const x = "era";
+// if x called into the Block Scope then x = era
+document.getElementById('etu3').innerHTML = x;
+}
+// if x called out of Block Scope then x = etu
+// document.getElementById('etu3').innerHTML = x;
 
 </script>
+
 </html>
